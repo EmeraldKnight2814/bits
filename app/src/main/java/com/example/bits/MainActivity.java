@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         int decimal_output = Integer.parseInt(output,2);
 
         binary.setText(output);
-        decimal.setText(decimal_output);
+        decimal.setText(Integer.toString(decimal_output));
     }
 
     public void clear(View trigger){
