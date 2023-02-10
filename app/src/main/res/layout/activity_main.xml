@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#006A4E"
     tools:context=".MainActivity">
 
     <androidx.gridlayout.widget.GridLayout
@@ -17,18 +18,19 @@
         android:layout_marginBottom="50dp"
         app:columnCount="4"
         app:rowCount="2"
-        app:iconPadding="5dp"
         app:layout_constraintBottom_toTopOf="@+id/binary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:useDefaultMargins="true">
+        app:useDefaultMargins="false">
 
         <Button
             android:id="@+id/button_1"
             android:layout_width="75dp"
             android:layout_height="50dp"
             android:text="1"
+            android:backgroundTint="#0eb98c"
+            android:enabled="true"
             app:layout_column="0"
             app:layout_row="0" />
 
@@ -37,6 +39,8 @@
             android:layout_width="75dp"
             android:layout_height="50dp"
             android:text="2"
+            android:backgroundTint="#0eb98c"
+            android:enabled="true"
             app:layout_column="1"
             app:layout_row="0" />
 
@@ -45,6 +49,8 @@
             android:layout_width="75dp"
             android:layout_height="50dp"
             android:text="4"
+            android:backgroundTint="#0eb98c"
+            android:enabled="true"
             app:layout_column="2"
             app:layout_row="0" />
 
@@ -53,6 +59,8 @@
             android:layout_width="75dp"
             android:layout_height="50dp"
             android:text="8"
+            android:backgroundTint="#0eb98c"
+            android:enabled="true"
             app:layout_column="3"
             app:layout_row="0" />
 
@@ -61,6 +69,8 @@
             android:layout_width="75dp"
             android:layout_height="50dp"
             android:text="16"
+            android:backgroundTint="#0eb98c"
+            android:enabled="true"
             app:layout_column="0"
             app:layout_row="1" />
 
@@ -69,6 +79,8 @@
             android:layout_width="75dp"
             android:layout_height="50dp"
             android:text="32"
+            android:backgroundTint="#0eb98c"
+            android:enabled="true"
             app:layout_column="1"
             app:layout_row="1" />
 
@@ -77,6 +89,8 @@
             android:layout_width="75dp"
             android:layout_height="50dp"
             android:text="64"
+            android:backgroundTint="#0eb98c"
+            android:enabled="true"
             app:layout_column="2"
             app:layout_row="1" />
 
@@ -84,6 +98,8 @@
             android:id="@+id/button_128"
             android:layout_width="75dp"
             android:layout_height="50dp"
+            android:backgroundTint="#0eb98c"
+            android:enabled="true"
             android:text="128"
             app:layout_column="3"
             app:layout_row="1" />
@@ -98,6 +114,7 @@
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="50dp"
         android:text="Binary"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/decimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -112,6 +129,7 @@
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="150dp"
         android:text="Decimal"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -126,9 +144,12 @@
         android:layout_marginEnd="260dp"
         android:layout_marginBottom="300dp"
         android:text="Clear"
+        android:textColor="#006A4E"
+        android:backgroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
