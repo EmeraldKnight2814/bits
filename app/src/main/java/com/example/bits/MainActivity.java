@@ -48,6 +48,77 @@ public class MainActivity extends AppCompatActivity {
         binary.setText("Binary");
         decimal.setText("Decimal");
         //reset buttons
-        //insert
+        Button ichi = (Button) findViewById(R.id.button_1);
+        ichi.setEnabled(true);
+        Button ni = (Button) findViewById(R.id.button_2);
+        ni.setEnabled(true);
+        Button yon = (Button) findViewById(R.id.button_4);
+        yon.setEnabled(true);
+        Button hachi = (Button) findViewById(R.id.button_8);
+        hachi.setEnabled(true);
+        Button jyuuroku = (Button) findViewById(R.id.button_16);
+        jyuuroku.setEnabled(true);
+        Button sanjyuuni = (Button) findViewById(R.id.button_32);
+        sanjyuuni.setEnabled(true);
+        Button rokujyuushi = (Button) findViewById(R.id.button_64);
+        rokujyuushi.setEnabled(true);
+        Button hyakunijyuuhachi = (Button) findViewById(R.id.button_128);
+        hyakunijyuuhachi.setEnabled(true);
+    }
+
+    public void pressed_1(View trigger){
+        buttonsPressed[0] = true;
+        Button ichi = (Button) findViewById(R.id.button_1);
+        ichi.setEnabled(false);
+        updateArray(0);
+    }
+
+    public void pressed_2(View trigger){
+        buttonsPressed[1] = true;
+        Button ni = (Button) findViewById(R.id.button_2);
+        ni.setEnabled(false);
+        updateArray(1);
+    }
+
+    public void pressed_4(View trigger){
+        buttonsPressed[2] = true;
+        Button yon = (Button) findViewById(R.id.button_4);
+        yon.setEnabled(false);
+        updateArray(2);
+    }
+
+    public void pressed_8(View trigger){
+        buttonsPressed[3] = true;
+        Button hachi = (Button) findViewById(R.id.button_8);
+        hachi.setEnabled(false);
+        updateArray(3);
+    }
+
+    public void pressed_16(View trigger){
+        buttonsPressed[4] = true;
+        Button jyuuroku = (Button) findViewById(R.id.button_16);
+        jyuuroku.setEnabled(false);
+        updateArray(4);
+    }
+
+    public void pressed_32(View trigger){
+        buttonsPressed[5] = true;
+        Button sanjyuuni = (Button) findViewById(R.id.button_32);
+        sanjyuuni.setEnabled(false);
+        updateArray(5);
+    }
+
+    public void pressed_64(View trigger){
+        buttonsPressed[6] = true;
+        Button rokujyuushi = (Button) findViewById(R.id.button_64);
+        rokujyuushi.setEnabled(false);
+        updateArray(6);
+    }
+
+    public void pressed_128(View trigger){
+        buttonsPressed[7] = true;
+        Button hyakunijyuuhachi = (Button) findViewById(R.id.button_128);
+        hyakunijyuuhachi.setEnabled(false);
+        updateArray(7);
     }
 }

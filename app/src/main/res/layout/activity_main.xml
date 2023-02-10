@@ -28,9 +28,10 @@
             android:id="@+id/button_1"
             android:layout_width="75dp"
             android:layout_height="50dp"
-            android:text="1"
             android:backgroundTint="#0eb98c"
             android:enabled="true"
+            android:onClick="pressed_1"
+            android:text="1"
             app:layout_column="0"
             app:layout_row="0" />
 
@@ -38,9 +39,10 @@
             android:id="@+id/button_2"
             android:layout_width="75dp"
             android:layout_height="50dp"
-            android:text="2"
             android:backgroundTint="#0eb98c"
             android:enabled="true"
+            android:onClick="pressed_2"
+            android:text="2"
             app:layout_column="1"
             app:layout_row="0" />
 
@@ -48,9 +50,10 @@
             android:id="@+id/button_4"
             android:layout_width="75dp"
             android:layout_height="50dp"
-            android:text="4"
             android:backgroundTint="#0eb98c"
             android:enabled="true"
+            android:onClick="pressed_4"
+            android:text="4"
             app:layout_column="2"
             app:layout_row="0" />
 
@@ -58,9 +61,10 @@
             android:id="@+id/button_8"
             android:layout_width="75dp"
             android:layout_height="50dp"
-            android:text="8"
             android:backgroundTint="#0eb98c"
             android:enabled="true"
+            android:onClick="pressed_8"
+            android:text="8"
             app:layout_column="3"
             app:layout_row="0" />
 
@@ -68,9 +72,10 @@
             android:id="@+id/button_16"
             android:layout_width="75dp"
             android:layout_height="50dp"
-            android:text="16"
             android:backgroundTint="#0eb98c"
             android:enabled="true"
+            android:onClick="pressed_16"
+            android:text="16"
             app:layout_column="0"
             app:layout_row="1" />
 
@@ -78,9 +83,10 @@
             android:id="@+id/button_32"
             android:layout_width="75dp"
             android:layout_height="50dp"
-            android:text="32"
             android:backgroundTint="#0eb98c"
             android:enabled="true"
+            android:onClick="pressed_32"
+            android:text="32"
             app:layout_column="1"
             app:layout_row="1" />
 
@@ -88,9 +94,10 @@
             android:id="@+id/button_64"
             android:layout_width="75dp"
             android:layout_height="50dp"
-            android:text="64"
             android:backgroundTint="#0eb98c"
             android:enabled="true"
+            android:onClick="pressed_64"
+            android:text="64"
             app:layout_column="2"
             app:layout_row="1" />
 
@@ -100,6 +107,7 @@
             android:layout_height="50dp"
             android:backgroundTint="#0eb98c"
             android:enabled="true"
+            android:onClick="pressed_128"
             android:text="128"
             app:layout_column="3"
             app:layout_row="1" />
@@ -143,13 +151,13 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="260dp"
         android:layout_marginBottom="300dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="clear"
         android:text="Clear"
         android:textColor="#006A4E"
-        android:backgroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
